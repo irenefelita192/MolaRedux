@@ -1,0 +1,100 @@
+.wrapper {
+    background-image: url('https://www.publicdomainpictures.net/pictures/180000/velka/sea-background-texture-14667654387Yx.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 76px 0 0 250px;
+}
+
+.containerOuter {
+    overflow: hidden;
+    width: 1190px;
+}
+
+.containerInner {
+    overflow-y: auto;
+    width: 1220px;
+    margin: 0 auto;
+    height: calc(100vh - 76px);
+}
+
+.movieContainer {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.movieDetailWrapper {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+    color: #FFFFFF;
+    width: calc(100% - 305px);
+}
+
+.movieImageWrapper {
+    position: relative;
+    display: inline-block;
+    width: 265px;
+    cursor: pointer;
+}
+
+.movieImageWrapper > img {
+    width: 100%;
+}
+
+.movieDurationBar {
+   position: absolute;
+   bottom: 15px;
+   width: calc(100% - 40px);
+   height: 4px;
+   background-color: #C1C1C1;
+   margin: 0 20px;
+}
+
+.moviePlayedBar {
+    position: absolute;
+    background-color: #E10B14;
+    height: 100%;
+}
+
+.movieTitle {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.movieChapter {
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+
+.movieDuration {
+    font-size: 20px;
+    padding-bottom: 4px;
+}
+
+@media screen and (max-width: 1200px) {
+    .containerOuter {
+        width: 960px;
+    }
+
+    .containerInner {
+        width: 1000px;
+    }
+
+    .movieImageWrapper {
+        width: 240px;
+    }
+
+    .movieTitle {
+        font-size: 16px;
+    }
+    
+    .movieChapter {
+        font-size: 14px;
+    }
+    
+    .movieDuration {
+        font-size: 18px;
+    }
+}
