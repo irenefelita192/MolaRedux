@@ -8,29 +8,31 @@
  */
 
 import React from 'react';
+import { compose } from 'redux'
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import { fetchAllHistory } from '../../../actions/history';
 import s from './History.css';
 
 class History extends React.Component {
+    componentWillMount() {
+        this.props.fetchAllHistory();
+    }
+
   static propTypes = {
-    // movie: PropTypes.shape({
-    //     img: PropTypes.string,
-    //     title: PropTypes.string,
-    //     chapter: PropTypes.string,
-    //     totalDuration: PropTypes.number,
-    // }),
     movies: PropTypes.arrayOf(PropTypes.object)
   };
 
   render() {
-    const { movies } = this.props;
+    const { movieDummy, movies } = this.props;
+    console.log("movieHistory", movies);
     return (
         <div className={s.wrapper}>
             <div className={s.containerOuter}>
                 <div className={s.containerInner}>
                 {
-                    movies.map( (movie) => {
+                    movieDummy.map( (movie) => {
                         const playedDuration = movie.playedDuration / movie.totalDuration * 100;
                         const barStyle = {
                             width: `${playedDuration}%`
@@ -60,4 +62,26 @@ class History extends React.Component {
   }
 }
 
-export default withStyles(s)(History);
+// History.propTypes = {
+//     movieHistory: PropTypes.arrayOf(PropTypes.object),
+//   };
+
+function mapStateToProps(state, ownProps) {
+    console.log("stateeee", state)
+    return {
+        movies: state.history.movies
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        // same effect
+        fetchAllHistory : () => dispatch(fetchAllHistory()),
+    }
+}
+
+// export default connect(mapStateToProps, mapDispatchToProps)(withStyles(s)(History));
+export default compose(
+    withStyles(s),
+    connect(mapStateToProps, mapDispatchToProps)
+)(History)

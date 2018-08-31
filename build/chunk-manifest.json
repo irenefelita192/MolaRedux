@@ -29,8 +29,10 @@
     "/assets/admin.chunk.js"
   ],
   "history": [
+    "/assets/vendors~history.chunk.js",
     "/assets/about~admin~contact~history~home~login~not-found~privacy~register.chunk.js",
-    "/assets/history.chunk.js"
+    "/assets/history.chunk.js",
+    "/assets/history.193589324427cd32a745.hot-update.js"
   ],
   "not-found": [
     "/assets/about~admin~contact~history~home~login~not-found~privacy~register.chunk.js",

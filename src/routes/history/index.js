@@ -22,6 +22,7 @@ const title = 'History';
 
 
 function action() {
+  // console.log("HISTORY", movieHistory)
     const dummyHistory = [
         { id:1, title: 'Hannibal Lecter - Season 3', chapter: 'Thirty three', playedDuration: 30, totalDuration: 49, img: 'https://via.placeholder.com/331x207'},
         { id:2, title: 'The Greatest Showman', chapter: 'One', playedDuration: 20, totalDuration: 100, img: 'https://via.placeholder.com/331x207'},
@@ -42,7 +43,7 @@ function action() {
     title,
     component: (
       <Layout>
-        <History movies={dummyHistory}/>
+        <History movieDummy={dummyHistory}/>
       </Layout>
     ),
   };

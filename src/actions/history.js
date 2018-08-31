@@ -1,0 +1,23 @@
+import { FETCH_HISTORY } from '../constants';
+import axios from 'axios';
+
+const apiUrl = 'http://mola.lukitomo.com/v2/videos/tt1179056';
+
+export const fetchHistory = (movies) => {
+  return {
+    type: FETCH_HISTORY,
+    result: movies
+  }
+};
+
+export const fetchAllHistory = () => {
+  return (dispatch) => {
+    return axios.get(apiUrl)
+      .then(response => {
+        dispatch(fetchHistory(response.data))
+      })
+      .catch(error => {
+        throw(error);
+      });
+  };
+};
