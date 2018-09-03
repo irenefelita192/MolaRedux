@@ -1,7 +1,7 @@
 {
   "about.js": "/assets/about.chunk.js",
-  "about~admin~contact~history~home~login~not-found~privacy~register.js":
-    "/assets/about~admin~contact~history~home~login~not-found~privacy~register.chunk.js",
+  "about~admin~contact~history~home~login~not-found~privacy~register~search.js":
+    "/assets/about~admin~contact~history~home~login~not-found~privacy~register~search.chunk.js",
   "admin.js": "/assets/admin.chunk.js",
   "client.js": "/assets/client.js",
   "contact.js": "/assets/contact.chunk.js",
@@ -11,6 +11,7 @@
   "not-found.js": "/assets/not-found.chunk.js",
   "privacy.js": "/assets/privacy.chunk.js",
   "register.js": "/assets/register.chunk.js",
+  "search.js": "/assets/search.chunk.js",
   "src/components/Header/logo-small.png":
     "/assets/src/components/Header/logo-small.png?2f751285",
   "src/components/Header/logo-small@2x.png":

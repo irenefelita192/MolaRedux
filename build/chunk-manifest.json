@@ -1,41 +1,45 @@
 {
   "client": ["/assets/vendors.chunk.js", "/assets/client.js"],
   "home": [
-    "/assets/about~admin~contact~history~home~login~not-found~privacy~register.chunk.js",
+    "/assets/about~admin~contact~history~home~login~not-found~privacy~register~search.chunk.js",
     "/assets/home.chunk.js"
   ],
   "contact": [
-    "/assets/about~admin~contact~history~home~login~not-found~privacy~register.chunk.js",
+    "/assets/about~admin~contact~history~home~login~not-found~privacy~register~search.chunk.js",
     "/assets/contact.chunk.js"
   ],
   "login": [
-    "/assets/about~admin~contact~history~home~login~not-found~privacy~register.chunk.js",
+    "/assets/about~admin~contact~history~home~login~not-found~privacy~register~search.chunk.js",
     "/assets/login.chunk.js"
   ],
   "register": [
-    "/assets/about~admin~contact~history~home~login~not-found~privacy~register.chunk.js",
+    "/assets/about~admin~contact~history~home~login~not-found~privacy~register~search.chunk.js",
     "/assets/register.chunk.js"
   ],
   "about": [
-    "/assets/about~admin~contact~history~home~login~not-found~privacy~register.chunk.js",
+    "/assets/about~admin~contact~history~home~login~not-found~privacy~register~search.chunk.js",
     "/assets/about.chunk.js"
   ],
   "privacy": [
-    "/assets/about~admin~contact~history~home~login~not-found~privacy~register.chunk.js",
+    "/assets/about~admin~contact~history~home~login~not-found~privacy~register~search.chunk.js",
     "/assets/privacy.chunk.js"
   ],
   "admin": [
-    "/assets/about~admin~contact~history~home~login~not-found~privacy~register.chunk.js",
+    "/assets/about~admin~contact~history~home~login~not-found~privacy~register~search.chunk.js",
     "/assets/admin.chunk.js"
   ],
   "history": [
     "/assets/vendors~history.chunk.js",
-    "/assets/about~admin~contact~history~home~login~not-found~privacy~register.chunk.js",
+    "/assets/about~admin~contact~history~home~login~not-found~privacy~register~search.chunk.js",
     "/assets/history.chunk.js",
-    "/assets/history.193589324427cd32a745.hot-update.js"
+    "/assets/history.5cb3f1b1856f5dbe78d6.hot-update.js"
+  ],
+  "search": [
+    "/assets/about~admin~contact~history~home~login~not-found~privacy~register~search.chunk.js",
+    "/assets/search.chunk.js"
   ],
   "not-found": [
-    "/assets/about~admin~contact~history~home~login~not-found~privacy~register.chunk.js",
+    "/assets/about~admin~contact~history~home~login~not-found~privacy~register~search.chunk.js",
     "/assets/not-found.chunk.js"
   ]
 }
